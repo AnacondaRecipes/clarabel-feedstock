@@ -1,0 +1,3 @@
+# rust 1.87.0 is compatible with clang 14
+c_compiler_version:  # [linux or osx]
+  - 14               # [osx]
