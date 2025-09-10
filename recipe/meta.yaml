@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   script:
-    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --ignore-installed
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
   skip: true  # [py<39]
 
